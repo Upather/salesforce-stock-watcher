@@ -8,6 +8,9 @@
 .localdevserver/
 deploy-options.json
 
+# Scratch Org Files
+config/tmp/
+
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json
 
@@ -43,3 +46,7 @@ $RECYCLE.BIN/
 **/__pycache__/
 **/.venv/
 **/venv/
+
+# VS Code settings
+.vscode/settings.json
+.vscode/launch.json
