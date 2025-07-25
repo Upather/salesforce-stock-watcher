@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <fullName>CurrentPrice__c</fullName>
+    <type>Currency</type>
+    <precision>14</precision>
+    <scale>4</scale>
+    <inlineHelpText>Automatically updated from real-time stock data. Prices stored with 4 decimal places.</inlineHelpText>
+    <required>false</required>
+    <description>The most recent stock price in USD</description>
+    <label>Current Price</label>
+    <securityClassification>Public</securityClassification>
+</CustomField>

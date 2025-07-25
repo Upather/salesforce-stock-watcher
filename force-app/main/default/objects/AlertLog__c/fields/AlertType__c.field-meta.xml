@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <fullName>AlertType__c</fullName>
+    <type>Picklist</type>
+    <inlineHelpText>Alert classification: High/Low Threshold alerts are triggered by price movements, System alerts are for technical issues, Manual alerts are user-initiated.</inlineHelpText>
+    <required>true</required>
+    <description>Categorizes the type of alert that was triggered based on business rules or system events.</description>
+    <label>Alert Type</label>
+    <valueSet>
+        <valueSetDefinition>
+            <value>
+                <fullName>System</fullName>
+                <label>System</label>
+                <default>true</default>
+            </value>
+            <value>
+                <fullName>High Threshold</fullName>
+                <label>High Threshold</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Low Threshold</fullName>
+                <label>Low Threshold</label>
+                <default>false</default>
+            </value>
+            <sorted>true</sorted>
+        </valueSetDefinition>
+    </valueSet>
+    <securityClassification>Internal</securityClassification>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <fullName>TrackedStock__c</fullName>
+    <type>MasterDetail</type>
+    <inlineHelpText>Links this price record to a specific tracked stock.</inlineHelpText>
+    <description>The stock symbol record that this price history entry belongs to.</description>
+    <label>Tracked Stock</label>
+    <referenceTo>TrackedStock__c</referenceTo>
+    <relationshipLabel>Stock Price Histories</relationshipLabel>
+    <relationshipName>StockPriceHistories</relationshipName>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <securityClassification>Internal</securityClassification>
+</CustomField>

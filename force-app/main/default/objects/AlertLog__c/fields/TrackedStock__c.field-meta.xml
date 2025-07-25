@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <fullName>TrackedStock__c</fullName>
+    <type>Lookup</type>
+    <inlineHelpText>Select the stock that triggered this alert, or leave blank for system-wide alerts.</inlineHelpText>
+    <description>Optional reference to the stock that triggered this alert. Allows for system-wide alerts that are not tied to specific stocks, maintains audit trail even if the stock record is deleted.</description>
+    <label>Tracked Stock</label>
+    <referenceTo>TrackedStock__c</referenceTo>
+    <relationshipLabel>Alert Logs</relationshipLabel>
+    <relationshipName>AlertLogs</relationshipName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <securityClassification>Internal</securityClassification>
+</CustomField>

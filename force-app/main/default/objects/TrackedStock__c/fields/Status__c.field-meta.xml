@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <fullName>Status__c</fullName>
+    <type>Picklist</type>
+    <inlineHelpText>Automatically calculated: Up (price increased), Down (price decreased), or Stable (no change)</inlineHelpText>
+    <required>false</required>
+    <description>Current price trend status based on comparison with previous price</description>
+    <label>Status</label>
+    <valueSet>
+        <valueSetDefinition>
+            <value>
+                <fullName>Up</fullName>
+                <label>Up</label>
+                <default>true</default>
+            </value>
+            <value>
+                <fullName>Down</fullName>
+                <label>Down</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>Stable</fullName>
+                <label>Stable</label>
+                <default>false</default>
+            </value>
+            <sorted>true</sorted>
+        </valueSetDefinition>
+    </valueSet>
+    <securityClassification>Internal</securityClassification>
+</CustomField>

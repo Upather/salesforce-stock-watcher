@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <fullName>CompanyName__c</fullName>
+    <type>Text</type>
+    <length>255</length>
+    <inlineHelpText>The Official company name</inlineHelpText>
+    <required>false</required>
+    <unique>false</unique>
+    <externalId>false</externalId>
+    <description>The full legal name of the publicly traded company</description>
+    <label>Company Name</label>
+    <securityClassification>Public</securityClassification>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <fullName>AlertLowThreshold__c</fullName>
+    <type>Currency</type>
+    <precision>16</precision>
+    <scale>2</scale>
+    <inlineHelpText>Set the minimum price threshold. You'll receive an alert when the stock price drops below this value.</inlineHelpText>
+    <required>false</required>
+    <description>Price level that triggers a low-price alert when stock falls below this value</description>
+    <label>Alert Low Threshold</label>
+    <securityClassification>Internal</securityClassification>
+</CustomField>

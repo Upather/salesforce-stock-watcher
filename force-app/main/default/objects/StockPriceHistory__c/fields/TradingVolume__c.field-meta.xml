@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TradingVolume__c</fullName>
+    <type>Number</type>
+    <precision>15</precision>
+    <scale>0</scale>
+    <inlineHelpText>Trading volume indicates market activity and liquidity. Higher volume often correlates with price reliability. Leave blank if volume data is unavailable from the data source.</inlineHelpText>
+    <required>false</required>
+    <unique>false</unique>
+    <description>Number of shares traded during the time period when this price was recorded</description>
+    <label>Trading Volume</label>
+    <securityClassification>Public</securityClassification>
+    <trackHistory>true</trackHistory>
+</CustomField>

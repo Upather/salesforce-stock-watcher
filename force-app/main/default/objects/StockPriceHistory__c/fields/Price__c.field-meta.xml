@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price__c</fullName>
+    <type>Currency</type>
+    <precision>10</precision>
+    <scale>4</scale>
+    <inlineHelpText>Historical stock price captured from market data APIs. Prices include 4 decimal places to ensure accuracy for financial calculations and trend analysis.</inlineHelpText>
+    <required>true</required>
+    <description>The stock price at a specific point in time, stored with 4 decimal places for maximum precision</description>
+    <label>Price</label>
+    <securityClassification>Public</securityClassification>
+    <trackHistory>true</trackHistory>
+    <caseSensitive>false</caseSensitive>
+</CustomField>

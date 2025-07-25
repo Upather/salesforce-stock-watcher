@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <fullName>AlertHighThreshold__c</fullName>
+    <type>Currency</type>
+    <precision>16</precision>
+    <scale>2</scale>
+    <inlineHelpText>Set the maximum price threshold. You'll receive an alert when the stock price goes above this value.</inlineHelpText>
+    <required>false</required>
+    <description>Price level that triggers a high-price alert when exceeded.</description>
+    <label>Alert High Threshold</label>
+    <securityClassification>Internal</securityClassification>
+</CustomField>

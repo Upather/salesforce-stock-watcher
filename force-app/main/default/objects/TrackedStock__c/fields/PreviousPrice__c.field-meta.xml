@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <fullName>PreviousPrice__c</fullName>
+    <type>Currency</type>
+    <precision>14</precision>
+    <scale>4</scale>
+    <inlineHelpText>Used to calculate price changes and determine if stock is trending up, down, or stable.</inlineHelpText>
+    <required>false</required>
+    <description>The previous closing price used for comparison and trend analysis</description>
+    <label>Previous Price</label>
+    <securityClassification>Public</securityClassification>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <fullName>AlertMessage__c</fullName>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+    <length>1000</length>
+    <inlineHelpText>Full text of the alert notification including stock symbol, price information, and threshold details. Used for audit purposes and troubleshooting alert delivery.</inlineHelpText>
+    <description>The complete alert message text that was sent to users via email or Slack</description>
+    <label>Alert Message</label>
+    <securityClassification>Internal</securityClassification>
+</CustomField>

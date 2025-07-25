@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <fullName>LastUpdated__c</fullName>
+    <type>DateTime</type>
+    <inlineHelpText>Shows when the stock price was last refreshed. Typically updated during market hours.</inlineHelpText>
+    <required>false</required>
+    <description>Timestamp of the most recent price data update from external API.</description>
+    <label>Last Updated</label>
+    <securityClassification>Internal</securityClassification>
+</CustomField>

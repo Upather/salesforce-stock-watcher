@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField>
+    <fullName>AlertSentAt__c</fullName>
+    <type>DateTime</type>
+    <inlineHelpText>Records when the alert was actually delivered.</inlineHelpText>
+    <required>true</required>
+    <description>The exact timestamp when the alert notification was sent to external systems or users.</description>
+    <label>Alert Sent At</label>
+    <securityClassification>Internal</securityClassification>
+</CustomField>

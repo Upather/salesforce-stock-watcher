@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject>
+    <pluralLabel>Alert Logs</pluralLabel>
+    <fullName>AlertLog__c</fullName>
+    <description>Audit trail of all alerts sent for stock price threshold breaches.</description>
+    <nameField>
+        <label>Alert Record Name</label>
+        <type>AutoNumber</type>
+        <displayFormat>ALT-{000000}</displayFormat>
+    </nameField>
+    <enableHistory>true</enableHistory>
+    <enableActivities>true</enableActivities>
+    <enableSearch>true</enableSearch>
+    <enableFeeds>false</enableFeeds>
+    <enableReports>true</enableReports>
+    <enableBulkApi>true</enableBulkApi>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <sharingModel>Read</sharingModel>
+    <label>Alert Log</label>
+    <deploymentStatus>Deployed</deploymentStatus>
+</CustomObject>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PriceTimestamp__c</fullName>
+    <type>DateTime</type>
+    <inlineHelpText>Timestamp showing when this price was captured. Used for chronological sorting and time-based analysis. Times are typically in market timezone (EST/EDT).</inlineHelpText>
+    <required>true</required>
+    <description>The exact date and time when this price was recorded from the market data source</description>
+    <label>Price Timestamp</label>
+    <securityClassification>Internal</securityClassification>
+</CustomField>
