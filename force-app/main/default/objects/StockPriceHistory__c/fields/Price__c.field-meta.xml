@@ -9,6 +9,4 @@
     <description>The stock price at a specific point in time, stored with 4 decimal places for maximum precision</description>
     <label>Price</label>
     <securityClassification>Public</securityClassification>
-    <trackHistory>true</trackHistory>
-    <caseSensitive>false</caseSensitive>
 </CustomField>

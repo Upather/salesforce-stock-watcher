@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomObject>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <pluralLabel>Alert Logs</pluralLabel>
     <fullName>AlertLog__c</fullName>
     <description>Audit trail of all alerts sent for stock price threshold breaches.</description>

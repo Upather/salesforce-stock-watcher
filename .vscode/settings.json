@@ -4,5 +4,6 @@
     "**/bower_components": true,
     "**/.sfdx": true
   },
-  "xml.validation.enabled": false
+  "xml.validation.enabled": false,
+  "salesforcedx-vscode-core.show-cli-success-msg": false
 }

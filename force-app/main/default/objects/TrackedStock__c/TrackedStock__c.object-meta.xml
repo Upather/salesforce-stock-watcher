@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomObject>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <pluralLabel>Tracked Stocks</pluralLabel>
     <fullName>TrackedStock__c</fullName>
     <description>Represents a stock symbol being monitored for price changes and alert thresholds</description>
