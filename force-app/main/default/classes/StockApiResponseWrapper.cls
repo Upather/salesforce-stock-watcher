@@ -29,7 +29,6 @@ public class StockApiResponseWrapper {
     // top-level JSON object = Global Quote
 
     public GlobalQuote globalQuote;
-
     public class GlobalQuote {
         @SerializedName ('05. price')
         public String price;
