@@ -30,3 +30,4 @@ public class CalloutResult {
 
     // handle security {getprivateset}
 }
+

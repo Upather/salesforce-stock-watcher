@@ -15,20 +15,29 @@ public class StockApiService {
     // best practice for explicit private declaration?
 
      //base endpoint for named credential
+    // external cred
      private static final String STOCK_API_ENDPOINT = 'callout:Stock_Data_API/query';
 
     // store api key retrieved from custom metadata
     private static final String API_KEY;
 
     // fetch api key once from custom metadata when class is first loaded
+
+    // previous approach was risky apparently - what if no config record exists?
     static {
-        API_Configuration__mdt config = [
-            SELECT API_KEY 
-            FROM API_Configuration__mdt 
+        List<API_Configuration__mdt> configs = [
+            SELECT API_Key__c
+            FROM API_Configuration__mdt
             WHERE DeveloperName = 'Stock_API'
             LIMIT 1
         ];
-        API_KEY = config.API_Key__c;
+        
+        if (!configs.isEmpty()) {
+            API_KEY = configs[0].API_Key__c;
+        } else {
+            // If configuration is missing, log critical error 
+            System.debug(LoggingLevel.ERROR, 'CRITICAL ERROR: Stock API configuration not found. Please create an API_Configuration__mdt record with DeveloperName = Stock_API.');
+        }
     }
 
     public static Map<String, CalloutResult> getStockPrices(List<String> stockSymbols) {
@@ -36,8 +45,10 @@ public class StockApiService {
 
         Map<String, CalloutResult> results = new Map<String, CalloutResult>();
 
+        // callout limit
+ 
         // 1 create full request
-        for (String symbol : stockSymbol) {
+        for (String symbol : stockSymbols) {
             String fullUrl = STOCK_API_ENDPOINT;
             fullUrl += '?function=GLOBAL_Quote';
             fullUrl += '&symbol=' + symbol;
@@ -46,7 +57,7 @@ public class StockApiService {
             // 2. http request
             HttpRequest request = new HttpRequest();
             request.setEndpoint(fullUrl);
-            request.getMethod('GET');
+            request.setMethod('GET');
             request.setTimeout(10000); // 10 second timeout - limit
 
 
@@ -69,3 +80,7 @@ public class StockApiService {
         return results;
     }
 }
+
+// qable and chain
+// chunk 50 rec at a time
+// eg. 200 = 4
